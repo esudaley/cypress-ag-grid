@@ -1,7 +1,7 @@
 // specify the columns
 const columnDefsGrouped = [
   { field: "year", pivot: true, },
-  { field: "make", rowGroup: true, enableRowGroup: true, aggFunc: 'sum' },
+  { field: "make" },
   { field: "model", filter: true },
   { field: "price", editable: true, cellEditor: 'agTextCellEditor'  },
 ];
