@@ -11,4 +11,8 @@ orbs:
 workflows:
   run_cypress_tests:
     jobs:
-      - cypress/run # "run" job comes from "cypress" orb
+      - cypress/run:
+          record: true 
+          parallel: true 
+          parallelism: 2 
+          group: 'All Ag Grid Tests' 
