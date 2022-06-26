@@ -6,6 +6,3 @@ workflows:
     jobs:
       - cypress/run:
           record: true
-          parallel: true 
-          parallelism: 2 
-          group: 'all ag grid tests'
